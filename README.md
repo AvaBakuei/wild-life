@@ -2,7 +2,7 @@
 
 ## Description
 
-This project is a React application built using Vite, TypeScript, and Tailwind CSS. It utilizes local storage for data storage, async/await for requests, and testing-library-react for testing purposes.
+This project is a React application built using Vite, TypeScript, and Tailwind CSS. It utilizes local storage for data storage, async/await for requests, Vitest, and testing-library-react for testing purposes.
 
 ## Prerequisites
 
