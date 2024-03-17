@@ -4,6 +4,8 @@
 
 This project is a React application built using Vite, TypeScript, and Tailwind CSS. It utilizes local storage for data storage, async/await for requests, Vitest, and testing-library-react for testing purposes.
 
+The deployed version is available below:
+[Wild-Life](https://wild-life-seven.vercel.app)
 ## Prerequisites
 
 Before running the project, make sure you have Node.js and npm installed on your machine.
