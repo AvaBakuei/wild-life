@@ -1,30 +1,61 @@
-# React + TypeScript + Vite
+# Project README
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Description
 
-Currently, two official plugins are available:
+This project is a React application built using Vite, TypeScript, and Tailwind CSS. It utilizes local storage for data storage, async/await for requests, and testing-library-react for testing purposes.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Prerequisites
 
-## Expanding the ESLint configuration
+Before running the project, make sure you have Node.js and npm installed on your machine.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Installation
 
-- Configure the top-level `parserOptions` property like this:
+To install the project dependencies, run the following command:
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+```bash
+npm install
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+## Setting API Key
+
+You need to set your API key in the `.env.local` file. The API key should start with `"VITE_API_KEY"`. For example:
+
+```
+VITE_API_KEY=YOUR_API_KEY
+```
+
+Usage of the API key in the code:
+
+```javascript
+const apiKey = import.meta.env.VITE_API_KEY;
+```
+
+## Usage
+
+To run the project, execute the following command:
+
+```bash
+npm run dev
+```
+
+This command will start the development server.
+
+## Testing
+
+Testing is implemented using `vitest`, `testing-library-react`. You can run the tests using the following command:
+
+```bash
+npm test
+```
+
+## Contributors
+
+- Ava Bakuei
+
+## Contact
+
+For any inquiries or issues, please contact ava.bakuie@gmail.com.
+
+---
+
+Feel free to customize this README with additional information specific to your project!
